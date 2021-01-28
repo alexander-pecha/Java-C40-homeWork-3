@@ -19,22 +19,21 @@ public class z7 {
         }
         int[] massPozitiv = new int[Countpozitiv];
         int pozitiv = 0;
+        int[] massNegativ = new int[Countnegativ];
+        int negativ = 0;
 
         for(int i = 0; i < mass.length; i++){
             if(mass[i] % 2 == 0 && mass[i] != 0){
                 massPozitiv[pozitiv] = mass[i];
                 pozitiv++;
-            }
-        }
-        int[] massNegativ = new int[Countnegativ];
-        int negativ = 0;
 
-        for(int i = 0; i < mass.length; i++){
+            }
             if(mass[i] % 2 == 1 && mass[i] != 0){
                 massNegativ[negativ] = mass[i];
                 negativ++;
             }
         }
+
         System.out.println(Arrays.toString(mass));
         System.out.println(Countnegativ);
         System.out.println(Countpozitiv);
